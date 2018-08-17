@@ -1,9 +1,9 @@
 # vue-tree-file-list
-A vue component for tree structure. Support adding treenode/leafnode, editing node's name and dragging.
+A vue component for tree structure supports adding treenode/leafnode, editing node's name and dragging.
 
-Thanks for ParadeTo,the origin author is he, I just add some new function for it.
+Thank ParadeTo who is the origin author, I just add some new functions to it.
 
-here is origin address : https://www.npmjs.com/package/vue-tree-list
+Here is the origin address : https://www.npmjs.com/package/vue-tree-list
 
 # use
 ``npm install vue-tree-file-list``
