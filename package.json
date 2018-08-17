@@ -1,0 +1,59 @@
+{
+  "name": "vue-tree-file-list",
+  "version": "1.0.8",
+  "description": "A vue component for tree structure. Support adding treenode/leafnode, editing node's name and dragging.",
+  "main": "dist/vue-tree-file-list.min.js",
+  "scripts": {
+    "test": "karma start --single-run",
+    "unit": "karma start --watch",
+    "coveralls": "npm run test -- --report lcovonly && cat ./coverage/lcov.info | coveralls",
+    "build": "webpack --config build/webpack.build.conf.js",
+    "dev": "webpack-dev-server --config build/webpack.dev.conf.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mr-arvin/vue-tree-list-list.git"
+  },
+  "keywords": [
+    "vue",
+    "tree"
+  ],
+  "author": "ayou",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mr-arvin/vue-tree-list-list/issues"
+  },
+  "homepage": "https://github.com/Mr-arvin/vue-tree-list-list#readme",
+  "devDependencies": {
+    "autoprefixer": "^6.4.0",
+    "babel-core": "^6.0.0",
+    "babel-eslint": "^7.0.0",
+    "babel-loader": "^6.0.0",
+    "babel-plugin-istanbul": "^3.0.0",
+    "babel-plugin-transform-runtime": "^6.0.0",
+    "babel-preset-es2015": "^6.0.0",
+    "babel-preset-stage-2": "^6.0.0",
+    "babel-register": "^6.0.0",
+    "chai": "^3.5.0",
+    "cross-env": "^5.0.1",
+    "css-loader": "^0.26.2",
+    "file-loader": "^0.10.1",
+    "html-webpack-plugin": "^2.8.1",
+    "isparta": "^4.0.0",
+    "isparta-loader": "^2.0.0",
+    "less": "^2.7.2",
+    "less-loader": "^2.2.3",
+    "sinon": "^2.3.5",
+    "sinon-chai": "^2.11.0",
+    "sourcemap": "^0.1.0",
+    "url-loader": "^0.5.7",
+    "vue": "^2.3.4",
+    "vue-loader": "^11.1.3",
+    "vue-style-loader": "^2.0.3",
+    "vue-template-compiler": "^2.2.0",
+    "vuex": "^3.0.1",
+    "webpack": "^1.13.2",
+    "webpack-dev-server": "1.14.0",
+    "webpack-merge": "^0.14.1"
+  }
+}
