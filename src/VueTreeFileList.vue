@@ -189,7 +189,7 @@
 
       toggle() {      
         // console.log(this)   
-        this.$parent.$children[0].expanded = false;       
+        // this.$parent.$children[0].expanded = false;       
         // console.log(this)
         if (this.isFolder) {
           this.expanded = !this.expanded

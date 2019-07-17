@@ -75,6 +75,7 @@
       }])
       }
     },
+    
     methods: {
       addNode: function () {
         var node = new TreeNode({ name: 'new node', isLeaf: false })
