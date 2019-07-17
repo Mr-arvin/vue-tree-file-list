@@ -130,7 +130,10 @@
       }
     },
     mounted () {
-      const vm = this
+      const vm = this;
+      for (var i = 0; i < this.$root.$children[0].$children[0].$children[0].$children.length; i++){
+        this.$root.$children[0].$children[0].$children[0].$children[i].expanded = false
+      }      
       addHandler(window, 'keyup', function (e) {
         // click enter
         if (e.keyCode === 13 && vm.editable) {
@@ -184,7 +187,10 @@
         node.$emit('blur', clickModel)
       },
 
-      toggle() {
+      toggle() {      
+        // console.log(this)   
+        this.$parent.$children[0].expanded = false;       
+        // console.log(this)
         if (this.isFolder) {
           this.expanded = !this.expanded
         }

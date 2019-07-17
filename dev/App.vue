@@ -18,7 +18,61 @@
     data () {
       return {
         newTree: {},
-        data: new Tree([])
+        data: new Tree([{
+        "id": 0,
+        "isLeaf": false,
+        "name": "root",
+        "children": [
+          {
+            "id": 1,
+            "isLeaf": false,
+            "name": "Node 1",
+            "pid": 0,
+            "dragDisabled": true,
+            "addTreeNodeDisabled": true,
+            "addLeafNodeDisabled": true,
+            "editNodeDisabled": true,
+            "delNodeDisabled": true,
+            "children": [
+              {
+                "id": 2,
+                "isLeaf": true,
+                "name": "Node 1-2",
+                "pid": 1
+              }
+            ]
+          },
+          {
+            "id": 3,
+            "isLeaf": false,
+            "name": "Node 2",
+            "pid": 0,
+            "disabled": true,
+            "children": [
+              {
+                "id": "1002",
+                "isLeaf": false,
+                "name": "NewNode",
+                "pid": 3,
+                "children": [
+                  {
+                    "id": "1003",
+                    "isLeaf": false,
+                    "name": "NewNode",
+                    "pid": "1002"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": 4,
+            "isLeaf": false,
+            "name": "Node 3",
+            "pid": 0
+          }
+        ]
+      }])
       }
     },
     methods: {
@@ -56,7 +110,7 @@
         console.log(model)
       },
       onAppend(status) {
-        alert('appending')
+        // alert('appending')
         console.log(status)
       },
       onBlur(model) {
